@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Categories</title>
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row col-md-6 col-md-offset-3">
+            <form id="addCategoryForm">
+                <div class="form-group">
+                    <label for="">Name</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="">Description</label>
+                    <input type="text" class="form-control" id="description">
+                </div>
+                <button type="submit" class="btn btn-success">Add Category</button>
+            </form>
+        </div>
+
+        <div class="row">
+            <table class="table table-striped" id="categoriesTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="public/js/jquery.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script>
+        let serverUrl = 'http://localhost:9999/';
+        $(document).ready(function() {
+           
+            getCategories();
+
+            $('#addCategoryForm').submit(function(e) {
+                e.preventDefault();
+
+                let name = $('#name').val();
+                let description = $('#description').val();
+             
+                let category = {
+                    name : name,
+                    description : description
+                };
+
+                $.ajax({
+                    url: serverUrl + 'categories/add',
+                    method: 'POST',
+                    dataType: 'json',
+                    contentType: 'application/json',
+                    data: JSON.stringify(category),
+                    complete: function(data) {
+                        if(data.status == 500) {
+                            console.log('Error happened');
+                        }
+                        if(data.status == 201) {
+                            $('#addCategoryForm')[0].reset();
+                            $('#categoriesTable tbody').empty();
+                            getCategories();
+                        }
+                    }
+                })
+
+            });
+        });
+
+        function getCategories() {
+            $.ajax({
+                url: serverUrl + 'categories/getAll',
+                method: 'GET',
+                dataType: 'json',
+                contentType: 'application/json',
+                success: function(response) {
+                    console.log(response);
+                    $.each(response, function(key, value) {
+                        $('#categoriesTable tbody').append(
+                            `
+                            <tr>
+                                <td>${ value.id}</td>
+                                <td>${ value.name }</td>
+                                <td>${ value.description }</td>
+                            `
+                        );
+                    })
+                }
+            })
+        }
+    
+    </script>
+</body>
+</html>

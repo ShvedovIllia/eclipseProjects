@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="SpringCore"/>
+<aop-project name="SpringBootApp"/>
+<aop-project name="AppServer-master"/>
+<aop-project name="webTest"/>
+<aop-project name="BadmintonCourts"/>
+<aop-project name="AppServer"/>
+<aop-project name="SpringBoot"/>
+<aop-project name="SpringBootRestServer"/>
+<aop-project name="spring-boot-server"/>
+</aop-reference-model>

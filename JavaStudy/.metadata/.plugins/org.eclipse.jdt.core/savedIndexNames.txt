@@ -1,0 +1,2 @@
+INDEX VERSION 1.130+C:\Users\Asus\.eclipse\JavaStudy\.metadata\.plugins\org.eclipse.jdt.core
+641634516.index

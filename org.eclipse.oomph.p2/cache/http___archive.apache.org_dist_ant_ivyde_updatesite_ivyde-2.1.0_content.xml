@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.1.0'?>
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.    
+-->
+<repository name='Apache IvyDE P2 Eclipse repository' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'>
+  <properties size='3'>
+    <property name='p2.timestamp' value='1332092864450'/>
+    <property name='p2.compressed' value='false'/>
+    <property name='p2.mirrorsURL' value='http://ant.apache.org/ivy/ivyde/updatesite/p2-mirrors--xml.cgi?path=ivyde-2.1.0'/>
+  </properties>
+  <references size='2'>
+    <repository uri='http://ant.apache.org/ivy/ivyde/updatesite' url='http://ant.apache.org/ivy/ivyde/updatesite' type='0' options='0'/>
+    <repository uri='http://ant.apache.org/ivy/ivyde/updatesite' url='http://ant.apache.org/ivy/ivyde/updatesite' type='1' options='0'/>
+  </references>
+  <units size='4'>
+    <unit id='file:/Users/hibou/dev/ivy/svn/updatesite/branches/p2repo-only/category.xml.org.apache.ivyde.category' version='1.0.0.41-cL0mnh773533I535I3G1wWkWOyW'>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Apache IvyDE Eclipse plugins'/>
+        <property name='org.eclipse.equinox.p2.type.category' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='file:/Users/hibou/dev/ivy/svn/updatesite/branches/p2repo-only/category.xml.org.apache.ivyde.category' version='1.0.0.41-cL0mnh773533I535I3G1wWkWOyW'/>
+      </provides>
+      <requires size='1'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.ivyde.feature.feature.group' range='[2.1.0.201008101807-RELEASE,2.1.0.201008101807-RELEASE]'/>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+    </unit>
+    <unit id='org.apache.ivyde.feature.feature.group' version='2.1.0.201008101807-RELEASE' singleton='false'>
+      <update id='org.apache.ivyde.feature.feature.group' range='[0.0.0,2.1.0.201008101807-RELEASE)' severity='0'/>
+      <properties size='9'>
+        <property name='org.eclipse.equinox.p2.name' value='%featureName'/>
+        <property name='org.eclipse.equinox.p2.description' value='%description'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://ant.apache.org/ivy/ivyde'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+        <property name='df_LT.featureName' value='Apache IvyDE'/>
+        <property name='df_LT.providerName' value='Apache Software Foundation'/>
+        <property name='df_LT.description' value='IvyDE Eclipse plugin'/>
+        <property name='df_LT.license' value='Licensed to the Apache Software Foundation (ASF) under one&#xA;or more contributor license agreements.  See the NOTICE file&#xA;distributed with this work for additional information&#xA;regarding copyright ownership.  The ASF licenses this file&#xA;to you under the Apache License, Version 2.0 (the&#xA;&quot;License&quot;); you may not use this file except in compliance&#xA;with the License.  You may obtain a copy of the License at&#xA;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xA;&#xA;Unless required by applicable law or agreed to in writing,&#xA;software distributed under the License is distributed on an&#xA;&quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY&#xA;KIND, either express or implied.  See the License for the&#xA;specific language governing permissions and limitations&#xA;under the License.'/>
+      </properties>
+      <provides size='2'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.ivyde.feature.feature.group' version='2.1.0.201008101807-RELEASE'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='18'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.editors' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.workbench.texteditor' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.forms' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.search' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.jdt.ui' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.ui.console' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.eclipse.osgi' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.ant' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='com.jcraft.jsch' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.ivy' range='0.0.0'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.ivyde.eclipse' range='[2.1.0.201008101807-RELEASE,2.1.0.201008101807-RELEASE]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.apache.ivyde.feature.feature.jar' range='[2.1.0.201008101807-RELEASE,2.1.0.201008101807-RELEASE]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.apache.org/licenses/LICENSE-2.0' url='http://www.apache.org/licenses/LICENSE-2.0'>
+          %license
+        </license>
+      </licenses>
+    </unit>
+    <unit id='org.apache.ivyde.feature.feature.jar' version='2.1.0.201008101807-RELEASE'>
+      <properties size='8'>
+        <property name='org.eclipse.equinox.p2.name' value='%featureName'/>
+        <property name='org.eclipse.equinox.p2.description' value='%description'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://ant.apache.org/ivy/ivyde'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='df_LT.featureName' value='Apache IvyDE'/>
+        <property name='df_LT.providerName' value='Apache Software Foundation'/>
+        <property name='df_LT.description' value='IvyDE Eclipse plugin'/>
+        <property name='df_LT.license' value='Licensed to the Apache Software Foundation (ASF) under one&#xA;or more contributor license agreements.  See the NOTICE file&#xA;distributed with this work for additional information&#xA;regarding copyright ownership.  The ASF licenses this file&#xA;to you under the Apache License, Version 2.0 (the&#xA;&quot;License&quot;); you may not use this file except in compliance&#xA;with the License.  You may obtain a copy of the License at&#xA;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xA;&#xA;Unless required by applicable law or agreed to in writing,&#xA;software distributed under the License is distributed on an&#xA;&quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY&#xA;KIND, either express or implied.  See the License for the&#xA;specific language governing permissions and limitations&#xA;under the License.'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.ivyde.feature.feature.jar' version='2.1.0.201008101807-RELEASE'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='org.apache.ivyde.feature' version='2.1.0.201008101807-RELEASE'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='org.apache.ivyde.feature' version='2.1.0.201008101807-RELEASE'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='http://www.apache.org/licenses/LICENSE-2.0' url='http://www.apache.org/licenses/LICENSE-2.0'>
+          %license
+        </license>
+      </licenses>
+    </unit>
+    <unit id='org.apache.ivyde.eclipse' version='2.1.0.201008101807-RELEASE'>
+      <update id='org.apache.ivyde.eclipse' range='[0.0.0,2.1.0.201008101807-RELEASE)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='IvyDE Eclipse Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='Apache Software Foundation'/>
+      </properties>
+      <provides size='15'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.apache.ivyde.eclipse' version='2.1.0.201008101807-RELEASE'/>
+        <provided namespace='osgi.bundle' name='org.apache.ivyde.eclipse' version='2.1.0.201008101807-RELEASE'/>
+        <provided namespace='java.package' name='org.apache.ivyde.eclipse' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.ivyde.eclipse.cpcontainer' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.ivyde.eclipse.cpcontainer.fragmentinfo' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.ivyde.eclipse.ui.actions' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.ivyde.eclipse.ui.console' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.ivyde.eclipse.ui.core' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.ivyde.eclipse.ui.editors' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.ivyde.eclipse.ui.editors.pages' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.ivyde.eclipse.ui.editors.xml' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.ivyde.eclipse.ui.preferences' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.ivyde.eclipse.ui.views' version='0.0.0'/>
+        <provided namespace='java.package' name='org.apache.ivyde.eclipse.ui.wizards' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='20'>
+        <required namespace='osgi.bundle' name='org.apache.xerces' range='0.0.0' optional='true'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jface.text' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.editors' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.workbench.texteditor' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.resources' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.ide' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.forms' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.search' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.ui.console' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.apache.ivy' range='[2.1.0,3.0.0)'/>
+        <required namespace='osgi.bundle' name='org.eclipse.help' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.wst.xml.core' range='0.0.0' optional='true'/>
+        <required namespace='osgi.bundle' name='org.eclipse.debug.core' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.jdt.launching' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.debug.ui' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.variables' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.apache.ivyde.eclipse' version='2.1.0.201008101807-RELEASE'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='2'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Export-Package: org.apache.ivyde.eclipse,org.apache.ivyde.eclipse.cpcontainer,org.apache.ivyde.eclipse.cpcontainer.fragmentinfo,org.apache.ivyde.eclipse.ui.actions,org.apache.ivyde.eclipse.ui.console,org.apache.ivyde.eclipse.ui.core,org.apache.ivyde.eclipse.ui.editors,org.apache.ivyde.eclipse.ui.editors.pages,org.apache.ivyde.eclipse.ui.editors.xml,org.apache.ivyde.eclipse.ui.preferences,org.apache.ivyde.eclipse.ui.views,org.apache.ivyde.eclipse.ui.wizards&#xA;Bundle-RequiredExecutionEnvironment: J2SE-1.4&#xA;Require-Bundle: org.apache.xerces;resolution:=optional,org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.jface.text,org.eclipse.ui.editors,org.eclipse.ui.workbench.texteditor,org.eclipse.core.resources,org.eclipse.ui.ide,org.eclipse.ui.forms,org.eclipse.search,org.eclipse.jdt.core,org.eclipse.jdt.ui,org.eclipse.ui.console,org.apache.ivy;bundle-version=&quot;[2.1.0,3.0.0)&quot;,org.eclipse.help,org.eclipse.wst.xml.core;resolution:=optional,org.eclipse.debug.core,org.eclipse.jdt.launching,org.eclipse.debug.ui,org.eclipse.core.variables&#xA;Bundle-Activator: org.apache.ivyde.eclipse.IvyPlugin&#xA;Bundle-Name: IvyDE Eclipse Plug-in&#xA;Bundle-Version: 2.1.0.201008101807-RELEASE&#xA;Bundle-Vendor: Apache Software Foundation&#xA;Bundle-SymbolicName: org.apache.ivyde.eclipse; singleton:=true&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ClassPath: ivyde-eclipse.jar&#xA;Manifest-Version: 1.0
+          </instruction>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+  </units>
+</repository>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?compositeArtifactRepository version='1.0.0'?>
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+-->
+
+<repository name='Apache IvyDE Repository' type='org.eclipse.equinox.internal.p2.metadata.repository.CompositeMetadataRepository' version='1.0.0'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1524162973268'/>
+    <property name='p2.compressed' value='false'/>
+  </properties>
+  <children size='10'>
+    <child location='ivyde-2.2.0.final-201311091524-RELEASE'/>
+    <child location='http://archive.apache.org/dist/ant/ivyde/updatesite/ivyde-2.2.0.beta1'/>
+    <child location='http://archive.apache.org/dist/ant/ivyde/updatesite/ivyde-2.1.0'/>
+    <child location='http://archive.apache.org/dist/ant/ivyde/updatesite/ivyde-2.0.0'/>
+    <child location='ivy-2.5.0.cr1_20180412005306'/>
+    <child location='ivy-2.4.0.final_20141213170938'/>
+    <child location='http://archive.apache.org/dist/ant/ivyde/updatesite/ivy-2.3.0.final_20130110142753'/>
+    <child location='http://archive.apache.org/dist/ant/ivyde/updatesite/ivy-2.2.0'/>
+    <child location='http://archive.apache.org/dist/ant/ivyde/updatesite/ivy-2.1.0'/>
+    <child location='http://archive.apache.org/dist/ant/ivyde/updatesite/ivy-2.0.0'/>
+  </children>
+</repository>
